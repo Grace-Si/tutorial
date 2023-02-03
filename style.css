@@ -1,0 +1,78 @@
+
+*{
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container{
+    background-color: rgb(0,0,0,0.4);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.container h1{
+    text-align: center;
+}
+.form-control{
+    position:relative;
+    margin:20px 0 40px;
+    width:300px;
+}
+.form-control input{
+    display: block;
+    background-color: transparent;
+    border:0;
+    border-bottom: 2px white solid;
+    width:100%;
+    font-size: 18px;
+    color: #fff;
+    padding: 15px 0;
+}
+.form-control input:focus,
+.form-control input:valid{
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+.form-control label{
+    position: absolute;
+    top:15px;
+    left: 0;
+    pointer-events: none;
+}
+.form-control span{
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s cubic-bezier(0.1,0.7,1.0,0.1);
+}
+.form-control input:focus + label,
+.form-control input:valid + label{
+    color: lightblue;
+    transform: translateY(-30px);
+}
+.btn{
+    cursor: pointer;
+    display: inline;
+    width:100%;
+    background: lightblue;
+    padding: 15px 15px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    align-items: center;
+    position:relative;
+}
+.text{
+    margin-top: 15px;
+}
+.text a{
+    color: lightblue;
+}
